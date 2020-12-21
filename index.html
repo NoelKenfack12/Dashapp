@@ -12,653 +12,111 @@
   <link rel="stylesheet" href="public/css/fonts.css"/>
   <link rel="stylesheet" href="public/css/font-awesome/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="public/css/carousel.css"/>
-	
-  <style>
-	.my-fixed-nav{
-		position: fixed!important; top: 0px!important; z-index: 500; width: 100%!important;
-		background: #2A2D42!important;
-		height: 100px;
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	}
-	.clearfix-top{
-		height: 100px; background: green;
-	}
-	.flat-menu-box{
-		text-align: center; vertical-align: middle; height: 100px; display: table-cell;
-	}
-	.flat-menu-box-second{
-		text-align: center; vertical-align: middle; height: 100px; display: table-cell;
-	}
-	.flat-menu-box span{
-		font-family: Muli-Regular;
-		font-size: 13px;
-		text-align: center;
-		color: #666666;
-	}
-	.flat-menu-box img{
-		width: 20px;
-	}
-	.btn-action-primary{
-		width: 199px;
-		height: 41px;
-		font-family: Quicksand-Bold;
-		font-size: 15px;
-		text-align: center;
-		line-height: 21px;
-		color: #FFFFFF!important;
-		background-color: #F91A6C;
-		background-repeat: repeat;
-		background-position: left top;
-		border: 2px solid #F91A6C;
-		border-radius: 6px; display: table-cell; vertical-align: middle; text-decoration: none!important;
-	}
-	.btn-action-profil{
-		width: 51px;
-		height: 41px;
-		font-family: Muli-Bold;
-		font-size: 13px;
-		text-align: center;
-		line-height: 19px;
-		color:  #FFFFFF;
-		background-color: #F91A6C;
-		background-repeat: repeat;
-		background-position: left top;
-		border: 2px solid  #F91A6C;
-		border-radius: 6px; display: table-cell; vertical-align: middle; text-decoration: none;
-	}
-	.box-logo{
-		width: 100%!important;
-		display: block; vertical-align: middle;
-		height: 100px;
-		font-family: Roboto-Regular;
-		font-size: 13px;
-		text-align: center;
-		line-height: 18px;
-		color: #404040;
-		background-color: #2A2D42;
-	}
-	
-	.collapse-gigamenu{
-		width: 84px;
-		height: 24px;
-		font-family: Quicksand-Bold;
-		font-size: 16px;
-		text-align: center;
-		color: #FFFFFF!important;;
-		text-shadow: 0px 0px 2px #000000;
-		text-decoration: none!important;
-	}
-	.nav-item-second{
-		font-family: Quicksand-Bold;
-		font-size: 16px;
-		text-align: center;
-		color: #FFFFFF!important;;
-		text-shadow: 0px 0px 2px #000000;
-		text-decoration: none!important;
-		white-space: nowrap;
-	}
-	.menu-container{
-		width: 87%;
-		margin: 0px auto;
-	}
-	.btn-action-login{
-		width: 162px;
-		height: 41px;
-		font-family: Quicksand-Bold;
-		font-size: 15px;
-		text-align: center;
-		line-height: 21px;
-		color: #FFFFFF!important;
-		background-color: #2A7DF4;
-		background-repeat: repeat;
-		background-position: left top;
-		border: 2px solid #2A7DF4;
-		border-radius: 6px; display: table-cell; vertical-align: middle; text-decoration: none!important;
-	}
-	
 
-.card-skeleton {
-    width: 270px;
-    height:250px;
-    margin: 5px;
-		margin-top: -3px!important;
-    position: relative;
-     float: left;
-    top: 0;
-    left: 0;
-    transition: all .3s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    background: #fff;
-    z-index: 10;
-    padding: 15px;
-    opacity: 1
-}
+  <style media="screen">
+    @media only screen and (max-width: 1020px) {
+      .menu-desktop{
+        display: none;
+      }
+      .menu-mobile{
+        display: block;
+      }
+      .carousel-ladingpage{
+        margin-top: 70px;
+      }
 
-.card-skeleton.hidden {
-    transition: all .3s ease-in-out;
-    opacity: 0;
-    height: 0;
-    padding: 0
-}
+      .box-logo-small{
+        display: block; vertical-align: middle;
+        height: 60px;
+        font-family: Roboto-Regular;
+        font-size: 13px;
+        text-align: center;
+        line-height: 18px;
+        color: #404040;
+        background-color: #2A2D42;
+        margin-top: -20px;
+        margin-bottom: -15px;
+      }
 
-.card-skeleton-img {
-    width: 100%;
-    height: 120px;
-    background: #e6e6e6;
-    display: block
-}
+      .carousel-caption {
+          position: absolute;
+          right: 15%;
+          top: 20px;
+          left: 15%;
+          z-index: 10;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          color: #fff;
+          text-align: left;
+      }
 
-.animated-background {
-    will-change: transform;
+      .text-hover-slide{
+        height: 100px;
+        width: 300px;
+        font-family: Quicksand-Bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 3px #000000;
+      }
 
-    -webkit-backface-visibility: hidden;
-    background: #e6e6e6;
-    background: linear-gradient(90deg, #eee 8%, #ddd 18%, #eee 33%);
-    background-size: 800px 104px;
-    height: 100%;
-    position: relative
-}
-.item{
-	text-decoration: none!important;
-	position: sticky;
-	    -webkit-transition: transform 200ms ease-in-out;
-    -moz-transition: transform 200ms ease-in-out;
-    -o-transition: transform 200ms ease-in-out;
-    transition: 200ms ease-in-out
-}
+      .cdisque-slide{
+        display: inline-block;
+        width: 120px;
+        border-radius: 50%;
+        height: 120px;
+        background: #F91A6C;
+        margin-bottom: -90px;
+        margin-left: -20px;
+      }
+    }
+    @media only screen and (min-width: 1020px) {
+      .menu-desktop{
+        display: block;
+      }
+      .menu-mobile{
+        display: none;
+      }
+      .carousel-ladingpage{
+        margin-top: -100px;
+      }
 
-.item:hover {
-    border-color: transparent;
-    transform: translateY(-5px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
-    cursor: pointer;
-}
+      .carousel-caption {
+          position: absolute;
+          right: 15%;
+          top: 300px;
+          left: 15%;
+          z-index: 10;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          color: #fff;
+          text-align: left;
+      }
+      .text-hover-slide{
+        height: 175px;
+        width: 616px;
+        font-family: Quicksand-Bold;
+        font-size: 53px;
+        line-height: 54px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 3px #000000;
+      }
 
-.inner-item{
-	height: 298px;
-	font-family: Arial;
-	font-size: 13px;
-	font-weight: 400;
-	text-align: center;
-	line-height: 18px;
-	color: #333333;
-	background-color: #FFFFFF;
-	background-repeat: repeat;
-	background-position: left top;
-	border: 1px solid #ECF0FA;
-	border-radius: 6px;
-	box-shadow: 0px 0px 8px 2px #CCCCCC;
-	padding: 7px;
-}
-
-.feature_box_col_one{
-	display: block;
-	text-align: center;
-}
-
-.feature_box_col_one img{
-	height: 154px;
-}
-
-.title-news-section{
-	font-family: Ubuntu-Bold;
-	font-size: 19px;
-	color: #0056A4;
-}
-.title-news-section a{
-	float: right; font-size: 10px;
-}
-.title-news-article{
-	font-family: Quicksand-Bold;
-	font-size: 16px;
-	color: #292929;
-}
-.content-news-article{
-	font-family: Muli-Regular;
-	font-size: 11px;
-	line-height: 15px;
-	color:  #000000;
-}
-.type-news-article{
-	font-family: Muli-Regular;
-	font-size: 16px;
-	color: #999999;
-}
-.date-news-article{
-	font-family: Ubuntu-Bold;
-	font-size: 13px;
-	color: #000000;
-}
-.leftLst{
-	position: relative; margin-top: -180px; background: #fff; color: #333; padding: 0px;
-}
-.rightLst{
-	position: relative; margin-top: -180px; background: #fff; color: #333; padding: 0px;
-}
-
-.dsh-btn-primary{
-	min-width: 102px;
-	height: 38px;
-	opacity: 0.8;
-	font-family: Muli-Bold;
-	font-size: 13px;
-	text-align: center;
-	line-height: 19px;
-	color: #FFFFFF;
-	background-color: #F91A6C;
-	border: 0px solid #F91A6C;
-	border-radius: 3px;
-	cursor: pointer;
-	white-space: nowrap;
-	padding-top: 10px;
-}
-
-.dash-btn-br{
-	position: absolute; bottom: 20px; right: 20px;
-}
-.slide-sm-title{
-	font-family: Raleway-Bold; font-size: 16px; color: #282828; margin-top: 20px;
-	display: block;
-	text-decoration: none!important;
-}
-.slide-md-title{
-	font-family: Raleway-Bold; font-size: 43px; color: #2A2D42; position: relative; z-index: 1;
-}
-
-.title-app-mobile {
-	font-family: Quicksand-Bold; font-size: 53px; color: #FFFFFF;
-}
-
-.home-panel-recom{
-	font-family: Roboto-Regular;
-	font-size: 13px;
-	text-align: center;
-	line-height: 18px;
-	color: #404040;
-	background-color: #F5F6FA; padding-top: 40px; min-height: 450px;
-}
-.effet-title-rest{
-	display: inline-block; width: 125px;
-	height: 38px;
-	opacity: 0.8;
-	font-family: Roboto-Regular;
-	font-size: 13px;
-	text-align: center;
-	line-height: 18px;
-	color: #404040;
-	background-color: #F91A6C; position: absolute; top: -10px; left: 0px;
-}
-
-.dwl-dash-app-content{
-	height: 400px;
-	font-family: Roboto-Regular;
-	font-size: 13px;
-	text-align: center;
-	line-height: 18px;
-	color: #404040;
-	background-color: #2A7DF4; padding: 100px 0px;
-}
-
-.dash-sm-logo{
-	height: 60px; margin-left: -25px; margin-top: -20px; position: relative; z-index: 2;
-}
-
-.item-bg-1{
-	background-color: #864FFF;
-}
-.item-bg-2{
-	background-color: #F9AD55;
-}
-.item-bg-3{
-	background-color: #72B4F0;
-}
-.item-bg-4{
-	background-color: #03A5AD;
-}
-.item-bg-5{
-	background-color: #00D294;
-}
-.item-bg-6{
-	background-color: #EE6D67;
-}
-.item-bg-7{
-	background-color: #FB6EBC;
-}
-.item-bg-8{
-	background-color: #2A7DF4;
-}
-.menu-item-circle{
-	width: 80px;
-	height: 80px;
-	font-family: Arial;
-	font-size: 13px;
-	font-weight: 400;
-	text-align: center;
-	line-height: 18px;
-	color: #333333;
-	background-repeat: repeat;
-	background-position: left top;
-	border: 0px solid #F1F3F9;
-	border-radius: 40px;
-	box-shadow: 0px 0px 8px 2px #37414A; padding-top: 18px; float: left; margin-right: 10px;
-}
-.menu-item-circle img{
-	height: 40px;
-}
-
-.item-menu-top{
-	display: block; text-decoration: none!important;
-	margin-top: 15px;
-}
-.item-menu-top .title-menu{
-	font-family: Quicksand-Bold; font-size: 19px; color: #FFFFFF; padding-top: 25px;
-}
-
-.partner-box{
-	width: 100%;
-	height: 149px;
-	font-family: Arial;
-	font-size: 13px;
-	font-weight: 400;
-	text-align: center;
-	line-height: 18px;
-	color: #333333;
-	background-color: #FFFFFF;
-	background-repeat: repeat;
-	background-position: left top;
-	border: 2px solid #CCCCCC;
-	border-radius: 3px; padding: 2px;
-	vertical-align: middle;
-	margin-top: 7px;
-}
-
-.call-action-btn{
-	height: 53px;
-	font-family: Quicksand-Bold;
-	font-size: 20px;
-	text-align: center;
-	line-height: 29px;
-	color: #FFFFFF!important;
-	background-repeat: repeat;
-	background-position: left top;
-	border-radius: 8px;  
-
-	padding: 10px 15px;
-	display: inline-block;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-	min-width: 250px;
-	text-decoration: none!important;
-}
-.call-action-btn.bggreen{
-	background-color: #2A7DF4;
-	border: 2px solid #2A7DF4;
-}
-.call-action-btn.bgred{
-	background-color:#F91A6C;
-	border: 2px solid #F91A6C;
-}
-
-
-.footer-content{
-	font-family: Roboto-Regular;
-	font-size: 13px;
-	line-height: 18px;
-	color: #404040;
-	background-color: #2A2D42; margin-top: 30px;
-}
-.footer-content .container{
-	height: 350px; padding-top: 80px;
-}
-.footer-content .logo-footer{
-	width: 191px;
-	height: 64px;
-	font-family: Raleway Black;
-	font-size: 35px;
-	text-align: center;
-	line-height: 49px;
-	color: #FFFFFF;
-	background-color: #F91A6C;
-	background-repeat: repeat;
-	background-position: left top;
-	border: 0px solid #2A2D42;
-	border-radius: 15px;
-	display: inline-block; text-decoration: none;
-	padding-top: 5px;
-}
-.footer-content .logo-footer span{
-	font-family: Arial;
-	font-size: 35px;
-	font-weight: 400;
-	color:#FFFFFF;
-}
-.footer-content .logo-footer span img{
-	width: 40px;
-	height: 40px;
-}
-.footer-content .app-descript{
-	font-family: Quicksand-Bold;
-	font-size: 24px;
-	color: #FFFFFF;
-	margin-top: 15px;
-	width: 276px;
-	height: 70px;
-	line-height: 25px;
-}
-
-
-/* Wrapper */
-.icon-button {
-	background-color: white;
-	border-radius: 2.6rem;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.3rem;
-	height: 2.6rem;
-	line-height: 2.6rem;
-	margin: 0 5px;
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 2.6rem;
-}
-
-/* Circle */
-.icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 0;
-}
-.icon-button:hover span {
-	width: 2.6rem;
-	height: 2.6rem;
-	border-radius: 2.6rem;
-	margin: -1.3rem;
-}
-
-/* Icons */
-.icon-button i {
-	background: none;
-	color: white;
-	height: 2.6rem;
-	left: 0;
-	line-height: 2.6rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 2.6rem;
-	z-index: 10;
-}
-
-.twitter span {
-	background-color: #4099ff;
-}
-.facebook span {
-	background-color: #3B5998;
-}
-.google-plus span {
-	background-color: #333;
-}
-.tumblr span {
-	background-color: #34526f;
-}
-.instagram span {
-	background-color: #517fa4;
-}
-.youtube span {
-	background-color: #bb0000;
-}
-.pinterest span {
-	background-color: #cb2027;
-}
-
-.icon-button .icon-twitter {
-	color: #4099ff;
-}
-.icon-button .icon-facebook {
-	color: #3B5998;
-}
-.icon-button .fa-tumblr {
-	color: #34526f;
-}
-.icon-button .icon-google-plus {
-	color: #db5a3c;
-}
-.icon-button .fa-instagram {
-	color: #517fa4;
-}
-.icon-button .fa-youtube {
-	color: #bb0000;
-}
-.icon-button .fa-pinterest {
-	color: #cb2027;
-}
-.icon-button .fa-facebook {
-	color: #3B5998;
-}
-.icon-button .fa-twitter {
-	color: #4099ff;
-}
-.icon-button .fa-linkedin {
-	color: #333;
-}
-
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus,
-.icon-button:hover .fa-tumblr,
-.icon-button:hover .fa-instagram,
-.icon-button:hover .fa-youtube,
-.icon-button:hover .fa-facebook,
-.icon-button:hover .fa-twitter,
-.icon-button:hover .fa-linkedin,
-.icon-button:hover .fa-pinterest {
-	color: white;
-}
-
-@media all and (max-width: 680px) {
-  .icon-button {
-    border-radius: 1.6rem;
-    font-size: 0.8rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    width: 1.6rem;
-  }
-
-  .icon-button:hover span {
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 1.6rem;
-    margin: -0.8rem;
-  }
-
-  /* Icons */
-  .icon-button i {
-	  height: 1.6rem;
-	  line-height: 1.6rem;
-	  width: 1.6rem;
-  }
-  .pinterest {
-   display: none; 
-  }
-}
-
-.title-footer-item{
-	font-family: Quicksand-Bold;
-	font-size: 24px;
-	color: #FFFFFF;
-}
-.footer-col-item a{
-	font-family: Muli-Regular;
-	font-size: 15px;
-	color: #FFFFFF;
-}
-.footer-col-content{
-	line-height: 30px;
-	margin-top: 15px;
-}
-.input-dash{
-	font-family: OpenSans-Light;
-	font-size: 15px;
-	color: #434343;
-	background-color: #2A2D42;
-	border: 1px solid #DDDDDD;
-	border-radius: 3px;
-	padding-right: 5px;
-	padding-left: 10px;
-	height: 40px;
-}
-.input-dash-submit-btn{
-	opacity: 0.8;
-	font-family: Muli-Bold;
-	font-size: 13px;
-	text-align: center;
-	line-height: 19px;
-	color: #FFFFFF;
-	background-color: #F91A6C;
-	border: 1px solid  #F91A6C;
-	border-radius: 3px;
-	min-width: 100px;
-}
-.cgu-content{
-	width: 1536px;
-	height: 52px;
-	font-family: Roboto-Regular;
-	font-size: 13px;
-	text-align: center;
-	line-height: 18px;
-	color: #404040;
-	background-color: #F91A6C; padding: 15px 0px;
-}
-.cgu-content .cpr{
-	font-family: Muli-Regular;
-	font-size: 16px;
-	color: #FFFFFF;
-}
-
-
+      .cdisque-slide{
+        display: inline-block;
+        width: 250px;
+        border-radius: 50%;
+        height: 250px;
+        background: #F91A6C;
+        margin-bottom: -150px;
+        margin-left: -50px;
+      }
+    }
   </style>
 </head>
 
 <body style="overflow-x: hidden;">
-	<header>
+<header class="menu-desktop">
 		<div style="height: 100px; border-bottom: 1px solid #ddd; background: #fff; padding: 0px; position: relative; z-index: 500;">
 		<div class="container">
 			<div class="row">
@@ -677,7 +135,7 @@
 						<div><img src="public/images/icon-envelope.svg" alt="Icon Phone Dash" style=""/> <span style="">email@email.com</span></div>
 					</div>
 				</div>
-				
+
 				<div class="offset-md-2 col-md-2">
 					<div class="flat-menu-box">
 						<a href="" class="btn-action-primary" style=""> FAIRE UNE PROMO </a>
@@ -691,13 +149,13 @@
 			</div>
 		</div>
 		</div>
-		
+
 
 		<aside id="right-sidebar-nav" style="background: rgba(0,0,0,0.1); position: fixed; height: 500px; width: 100%; z-index: 100; top: -500px;">
 			<div class="clearfix-top" style=""></div>
-			
+
 			<div class="menu-container">
-				
+
 				<div style="padding-top: 50px; background: #2A2D42;">
 					<div style=" box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1); padding: 50px 20px; color: #fff;">
 						<div class="container">
@@ -705,7 +163,7 @@
 								<div class="col-md-12">
 									<hr style="border-top: 2px solid #A9A9A9;"/>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-1">
@@ -714,7 +172,7 @@
 										<div class="title-menu">Nourriture</div>
 									</a>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-2">
@@ -723,7 +181,7 @@
 										<div class="title-menu">Boissons</div>
 									</a>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-3">
@@ -732,7 +190,7 @@
 										<div class="title-menu">Vetements</div>
 									</a>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-1">
@@ -741,11 +199,11 @@
 										<div class="title-menu">Chaussures</div>
 									</a>
 								</div>
-								
-								<div class="col-md-12">	
+
+								<div class="col-md-12">
 									<br/>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-5">
@@ -754,7 +212,7 @@
 										<div class="title-menu">Electronique</div>
 									</a>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-6">
@@ -763,7 +221,7 @@
 										<div class="title-menu">Services</div>
 									</a>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-7">
@@ -772,7 +230,7 @@
 										<div class="title-menu">Vetements</div>
 									</a>
 								</div>
-								
+
 								<div class="col-md-3">
 									<a href="" class="item-menu-top">
 										<div class="menu-item-circle item-bg-1">
@@ -785,9 +243,9 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
-			
+
 		</aside>
 
 		<nav class="header-navbar" style="min-height: 80px; background: transparent; padding: 0px; position: relative; z-index: 500;">
@@ -838,17 +296,108 @@
 			    </div>
 			</div>
 		</nav>
-		
-	</header>
-	
-<div >
-	
+</header>
+
+
+<div class="menu-mobile js-header-wrap ag-header-wrap">
+  <header class="ag-header">
+    <div class="ag-format-container clearfix">
+      <a class="ag-logo_link" href="/">
+        <div class="box-logo-small">
+        <img src="public/images/JP_Clipboard_Image.png" alt="Logo Dash" style="height: 50px; margin-top: 15px;"/>
+        </div>
+      </a>
+      <div class="js-menu_btn-wrap ag-menu_btn-wrap">
+        <div class="ag-menu_btn"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="js-menu-block ag-menu-block">
+    <div class="ag-format-container">
+      <nav class="js-menu_nav ag-menu_nav">
+        <div id="ag-mob-language_selectbox" class="ag-mob-language_selectbox">
+          <form class="ag-mob-language_form">
+            <select class="js-mob-language_select ag-mob-language_select">
+              <option selected="" value="en">English</option>
+              <option value="fr">Français</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="ag-mob-login_box">
+          <a href="/login" class="ag-mob-login_link">Se connecter</a>
+        </div>
+
+        <ul class="ag-menu_list" style="padding-left: 0px;">
+          <li class="ag-menu_item ag-menu-parent_item">
+            <a href="#catalogs" class="js-menu-subcat_title-list ag-menu_link-item ag-menu-subcat_title-list">Catalogue</a>
+            <ul class="js-menu-subcat_list ag-menu-subcat_list">
+              <li class="ag-menu-subcat_item">
+                <a href="#companies" class="ag-menu-subcat_link-item">Nourriture</a>
+              </li>
+              <li class="ag-menu-subcat_item">
+                <a href="#tools" class="ag-menu-subcat_link-item">Boissons</a>
+              </li>
+              <li class="ag-menu-subcat_item">
+                <a href="#tools" class="ag-menu-subcat_link-item">Vêtements</a>
+              </li>
+              <li class="ag-menu-subcat_item">
+                <a href="#tools" class="ag-menu-subcat_link-item">Chaussures</a>
+              </li>
+              <li class="ag-menu-subcat_item">
+                <a href="#tools" class="ag-menu-subcat_link-item">Electronique</a>
+              </li>
+              <li class="ag-menu-subcat_item">
+                <a href="#tools" class="ag-menu-subcat_link-item">Services</a>
+              </li>
+              <li class="ag-menu-subcat_item">
+                <a href="#tools" class="ag-menu-subcat_link-item">Autres</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="ag-menu_item">
+            <a href="#events" class="ag-menu_link-item">Pourquoi Dash ?</a>
+          </li>
+          <li class="ag-menu_item">
+            <a href="#analytics" class="ag-menu_link-item">Offres et Tarifs</a>
+          </li>
+          <li class="ag-menu_item">
+            <a href="#interviews" class="ag-menu_link-item">À propos</a>
+          </li>
+          <li class="ag-menu_item">
+            <a href="#blogs" class="ag-menu_link-item">Contactez nous</a>
+          </li>
+
+        </ul>
+
+        <div class="js-search_btn ag-search_btn"></div>
+        <div class="js-search-block ag-search-block">
+          <form id="ag-search_form" class="ag-search_form" action="#" name="search-form" method="GET" target="_self">
+            <input name="search_id" value="1" type="hidden">
+            <input name="l10n" value="ru" type="hidden">
+            <input name="reqenc" value="" type="hidden">
+            <input name="do_search" value="Y" type="hidden">
+            <div class="ag-search_field">
+              <div id="ag-search_btn-submit" class="ag-search_btn-submit"></div>
+              <input name="text" class="js-search_input ag-search_input" type="text" title="">
+              <div class="js-search_btn-close ag-search_btn-close"></div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div>
   <!--
 	####################################################
 	C A R O U S E L
 	####################################################
   -->
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" style="margin-top: -100px;">
+    <div id="carousel" class="carousel slide carousel-fade carousel-ladingpage" data-ride="carousel" data-interval="6000" style="">
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
@@ -856,59 +405,62 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-            
-                <a href="">
-                    <picture>
-					  <img srcset="public/images/image-ban1.png" alt="responsive image" style="width: 100%;">
-                    </picture>
-                    <div class="carousel-caption">
-                        <div>
-                            <h2>Digital Craftsmanship 1</h2>
-                            <p>We meticously build each site to get results</p>
-                        </div>
+                <picture>
+                  <img srcset="public/images/image-ban1.png" alt="responsive image" style="width: 100%; ">
+                </picture>
+                <div class="carousel-caption">
+                    <div class="cdisque-slide"></div>
+                    <div class="text-hover-slide">
+                        <p>Faire la promotion d'un produit n'a jamais été aussi simple</p>
+
+                        <a href="" class="btn-action-login">EN SAVOIR PLUS</a>
                     </div>
-                </a>
+                </div>
             </div>
             <!-- /.carousel-item -->
             <div class="carousel-item">
-                <a href="">
-                     <picture>
-					  <img srcset="public/images/image-ban1.png" alt="responsive image" style="width: 100%;">
-                    </picture>
+                  <picture>
+				              <img srcset="public/images/image-ban1.png" alt="responsive image" style="width: 100%;">
+                  </picture>
 
-                    <div class="carousel-caption justify-content-center align-items-center">
-                        <div>
-                            <h2>Every project begins with a sketch 2</h2>
-                            <p>We work as an extension of your business to explore solutions</p>
-                        </div>
-                    </div>
-                </a>
+                  <div class="carousel-caption">
+                      <div class="cdisque-slide"></div>
+                      <div class="text-hover-slide">
+                          <p>Faire la promotion d'un produit n'a jamais été aussi simple</p>
+
+                          <a href="" class="btn-action-login">EN SAVOIR PLUS</a>
+                      </div>
+                  </div>
             </div>
             <!-- /.carousel-item -->
             <div class="carousel-item">
-                <a href="">
-                    <picture>
-					  <img srcset="public/images/image-ban1.png" alt="responsive image" style="width: 100%;">
-                    </picture>
+                <picture>
+			             <img srcset="public/images/image-ban1.png" alt="responsive image" style="width: 100%;">
+                </picture>
 
-                    <div class="carousel-caption justify-content-center align-items-center">
-                        <div>
-                            <h2>Performance Optimization 3</h2>
-                            <p>We monitor and optimize your site's long-term performance</p>
-                        </div>
+                <div class="carousel-caption">
+                    <div class="cdisque-slide"></div>
+                    <div class="text-hover-slide">
+                        <p>Faire la promotion d'un produit n'a jamais été aussi simple</p>
+
+                        <a href="" class="btn-action-login">EN SAVOIR PLUS</a>
                     </div>
-                </a>
+                </div>
             </div>
             <!-- /.carousel-item -->
         </div>
         <!-- /.carousel-inner -->
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <i>
+              <span class="carousel-control-prev-icon fa fa-arrow-left" aria-hidden="true" style="color: #333;"></span>
+            </i>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+          <i style="">
+            <span class="carousel-control-next-icon fa fa-arrow-right" aria-hidden="true" style="color: #333;"></span>
+          </i>
+          <span class="sr-only">Next</span>
         </a>
     </div>
     <!-- /.carousel -->
@@ -916,7 +468,7 @@
 
 <section class="home-panel-recom">
 		<div class="container" style="">
-		
+
 			<div class="row">
 				<div class="col-md-6">
 				<div style="position: sticky;">
@@ -931,7 +483,7 @@
 					<a href="#!" class="slide-sm-title">Les Plus Consultées</a>
 			    </div>
 			</div>
-			
+
 			<div class="resCarousel" data-items="1,2,3,4" data-slide="1" style="padding-left: 0px; padding-right: 0px;">
 			<div class="resCarousel-inner">
 
@@ -943,14 +495,14 @@
 
 					<div class="text-left" style="margin-top: 15px;">
 					<h5 class="title-news-article">Jus Tampico 1L </h5>
-					<div class="type-news-article"> 
-						Agenda 
+					<div class="type-news-article">
+						Agenda
 						<span class="dsh-btn-primary dash-btn-br">Consulter</span>
 					</div>
 					</div>
 				</div>
 				</a>
-				
+
 				<a href="" class="item">
 				<div class="inner-item">
 					<span class="icon feature_box_col_one">
@@ -959,8 +511,8 @@
 
 					<div class="text-left" style="margin-top: 15px;">
 					<h5 class="title-news-article"> Escarpin </h5>
-					<div class="type-news-article"> 
-						Ailunou 
+					<div class="type-news-article">
+						Ailunou
 						<span class="dsh-btn-primary dash-btn-br">Consulter</span>
 					</div>
 					</div>
@@ -975,8 +527,8 @@
 
 					<div class="text-left" style="margin-top: 15px;">
 					<h5 class="title-news-article"> Coca Cola light </h5>
-					<div class="type-news-article"> 
-						SABC 
+					<div class="type-news-article">
+						SABC
 						<span class="dsh-btn-primary dash-btn-br">Consulter</span>
 					</div>
 					</div>
@@ -991,8 +543,8 @@
 
 					<div class="text-left" style="margin-top: 15px;">
 					<h5 class="title-news-article"> Camon 12 </h5>
-					<div class="type-news-article"> 
-						Tecno 
+					<div class="type-news-article">
+						Tecno
 						<span class="dsh-btn-primary dash-btn-br">Consulter</span>
 					</div>
 					</div>
@@ -1007,14 +559,14 @@
 
 					<div class="text-left" style="margin-top: 15px;">
 					<h5 class="title-news-article"> Camon 12 </h5>
-					<div class="type-news-article"> 
-						Tecno 
+					<div class="type-news-article">
+						Tecno
 						<span class="dsh-btn-primary dash-btn-br">Consulter</span>
 					</div>
 					</div>
 				</div>
 				</a>
-				
+
 				<a href="" class="item">
 				<div class="inner-item">
 					<span class="icon feature_box_col_one">
@@ -1023,8 +575,8 @@
 
 					<div class="text-left" style="margin-top: 15px;">
 					<h5 class="title-news-article"> Camon 12 </h5>
-					<div class="type-news-article"> 
-						Tecno 
+					<div class="type-news-article">
+						Tecno
 						<span class="dsh-btn-primary dash-btn-br">Consulter</span>
 					</div>
 					</div>
@@ -1036,10 +588,10 @@
 			<button class="btn btn-default rightLst pull-right"><i class="fa fa-fw fa-angle-right"></i></button>
 			</div>
 	    </div>
-</section>	
+</section>
 
 
-<section class="dwl-dash-app-content">	
+<section class="dwl-dash-app-content">
 
 	<div class="container text-center">
 		<h2>
@@ -1052,11 +604,11 @@
 			<a href="" style="display: inline-block" target="_blank"><img src="public/images/app-store.png" alt="" title="" style="height: 65px; margin: 4px;"/></a>
 		</div>
 	</div>
-	
-</section>	
 
-<section style="padding-top: 40px;">	
-	<div class="container">	
+</section>
+
+<section style="padding-top: 40px;">
+	<div class="container">
 		<!--
 			####################################################
 			C A R O U S E L
@@ -1077,8 +629,8 @@
 						<h4 class="slide-md-title">Marques à la une</h4>
 					</div>
 					</div>
-				
-				
+
+
 					<div class="col-md-3">
 					   <div class="partner-box">
 						<div>
@@ -1146,8 +698,8 @@
 						<h4 class="slide-md-title">Marques à la une</h4>
 					</div>
 					</div>
-				
-				
+
+
 					<div class="col-md-3">
 					   <div class="partner-box">
 						<div>
@@ -1220,29 +772,29 @@
         </a>
     </div>
     <!-- /.carousel -->
-	
-	
-	<div class="text-center" style="margin-top: 20px;">	
-		<span>	
-			<a href="" class="call-action-btn bggreen" >	
+
+
+	<div class="text-center" style="margin-top: 20px;">
+		<span>
+			<a href="" class="call-action-btn bggreen" >
 				Inscrire une entreprise
-			</a>	
+			</a>
 		</span>
-		<span>	
-			<a href="" class="btn call-action-btn bgred">	
+		<span>
+			<a href="" class="btn call-action-btn bgred">
 				Faire une Promo
-			</a>	
+			</a>
 		</span>
 	</div>
-	
-	</div>	
-	
-		
-</section>	
+
+	</div>
+
+
+</section>
 
 
 
-<footer class="footer-content">	
+<footer class="footer-content">
 <div class="container">
 <div class="row">
 	<div class="col-md-4">
@@ -1262,10 +814,10 @@
 			<a href="#" class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a>
 		</div>
 	</div>
-	
+
 	<div class="col-md-4">
 		<h4 class="title-footer-item">Liens utiles</h4>
-		
+
 		<div class="footer-col-content">
 		<div class="footer-col-item">
 			<a href=""><span class="fa fa-chevron-right"></span> Faire une promo</a>
@@ -1284,10 +836,11 @@
 		</div>
 		</div>
 	</div>
-	
+
 	<div class="col-md-4">
+
 		<h4 class="title-footer-item">Newsletter</h4>
-		
+
 		<div class="input-group mb-3 mt-3">
 		  <input type="text" class="form-control input-dash" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
 		  <div class="input-group-append">
@@ -1299,15 +852,16 @@
 </div>
 </div>
 
-<div style="cgu-content">	
-	<div style="cpr">	
+<div class="cgu-content">
+	<div class="cpr">
 		<img src="public/images/cr.svg" alt="" style="height: 30px;"/> 2020 Copyright Dash. Tous droits reservés
-	</div>	
-</div>	
+	</div>
+</div>
 
-</footer>	
-	
+</footer>
+
 <script src="public/js/jquery-3.5.1.min.js"></script>
+<script src="public/js/main-script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 <script src="public/js/carousel.js"></script>
@@ -1318,7 +872,7 @@
 	$('.collapse-gigamenu').click(function(){
 	  openModalRight();
 	});
-	
+
 	function openModalRight()
 	{
 	  if(animtail == 0)
@@ -1330,7 +884,7 @@
 		animtail = 0;
 	  }
 	}
-	
+
 	$(window).bind('scroll', function(){
 		var largeur = ($(window).width());
 		dimension = 60;
