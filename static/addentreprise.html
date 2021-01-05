@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en-US" style=""><!--<![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Favicons-->
+  <link rel="icon" href="../public/images/qr-code-24.png" sizes="32x32"/>
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css"/>
+  <title>Acceuil - Dash App</title>
+  <link rel="stylesheet" href="../public/css/fonts.css"/>
+  <link rel="stylesheet" href="../public/css/font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="../public/css/carousel.css"/>
+
+</head>
+
+<body style="overflow-x: hidden;">
+  <header class="menu-desktop">
+  		<?php include 'navbar-top.html' ?>
+      <div class="background: #333; height: 90px;">
+        <?php include 'aside-top.html' ?>
+      </div>
+  </header>
+  <?php include 'mobile-sidebar.html' ?>
+
+<section >
+
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12" style="margin-bottom: 15px;">
+      <div style="position: sticky;">
+        <div class="effet-title-rest"></div>
+        <h4 class="slide-md-title">Création d'entreprise</h4>
+      </div>
+      </div>
+    </div>
+		<div class="" style="height: 1500px; background: #fff;">
+
+    </div>
+	</div>
+
+</section>
+
+
+
+<?php include 'footer.html' ?>
+
+<script src="../public/js/jquery-3.5.1.min.js"></script>
+<script src="../public/js/main-script.js"></script>
+<script src="../public/js/bootstrap.bundle.min.js" ></script>
+
+<script src="../public/js/carousel.js"></script>
+
+<script type="text/javascript">
+	var animtail = 0;
+
+	$('.collapse-gigamenu').click(function(){
+	  openModalRight();
+	});
+
+	function openModalRight()
+	{
+	  if(animtail == 0)
+	  {
+		  $( "#right-sidebar-nav" ).animate({ "top": "+=500px" }, "slow" );
+		  animtail = 500;
+	  }else{
+		$( "#right-sidebar-nav" ).animate({ "top": "-=500px" }, "slow" );
+		animtail = 0;
+	  }
+	}
+
+	$(window).bind('scroll', function(){
+		var largeur = ($(window).width());
+		dimension = 60;
+		if($(window).scrollTop() > dimension){
+		  $('.header-navbar').addClass('my-fixed-nav');
+		  $('.clearfix-top').hide("slow");
+		}else{
+		  $('.header-navbar').removeClass('my-fixed-nav');
+		  $('.clearfix-top').show("slow");
+		}
+	});
+
+  $('.header-navbar').css('background', '#2A2D42');
+</script>
+</body>
+</html>

@@ -3406,3 +3406,104 @@ End style slide checkbox
   border-radius: 4px;
   box-shadow: 0px 1px 10px 2px #D6D9E4; padding: 15px 15px 0px 15px; margin: 15px 0px;
 }
+
+
+@media only screen and (max-width: 1020px) {
+  .menu-desktop{
+    display: none;
+  }
+  .menu-mobile{
+    display: block;
+  }
+  .carousel-ladingpage{
+    margin-top: 70px;
+  }
+
+  .box-logo-small{
+    display: block; vertical-align: middle;
+    height: 60px;
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+    color: #404040;
+    background-color: #2A2D42;
+    margin-top: -20px;
+    margin-bottom: -15px;
+  }
+
+  .carousel-caption {
+      position: absolute;
+      right: 15%;
+      top: 20px;
+      left: 15%;
+      z-index: 10;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: left;
+  }
+
+  .text-hover-slide{
+    height: 100px;
+    width: 300px;
+    font-family: Quicksand-Bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 3px #000000;
+  }
+
+  .cdisque-slide{
+    display: inline-block;
+    width: 120px;
+    border-radius: 50%;
+    height: 120px;
+    background: #F91A6C;
+    margin-bottom: -90px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .menu-desktop{
+    display: block;
+  }
+  .menu-mobile{
+    display: none;
+  }
+  .carousel-ladingpage{
+    margin-top: -100px;
+  }
+
+  .carousel-caption {
+      position: absolute;
+      right: 15%;
+      top: 300px;
+      left: 15%;
+      z-index: 10;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: left;
+  }
+  .text-hover-slide{
+    height: 175px;
+    width: 616px;
+    font-family: Quicksand-Bold;
+    font-size: 53px;
+    line-height: 54px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 3px #000000;
+  }
+
+  .cdisque-slide{
+    display: inline-block;
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    background: #F91A6C;
+    margin-bottom: -150px;
+    margin-left: -50px;
+  }
+}
